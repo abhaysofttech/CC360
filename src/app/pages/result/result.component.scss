@@ -1,0 +1,333 @@
+.result-page{
+    background-color: #ecf4f7 !important;
+    background-position: bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-image: url(../../../assets/images/global_back.png);
+}
+header{
+    height: 60px;
+    padding: 0 20px;
+}
+.logo-container{
+    width: 70%;
+}
+.menu-list{
+    margin-top: 10px;
+}
+.logo{display: inline-block;}
+.logo > * > img{
+    width: 131px;
+}
+.profilePic{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.profilePic > img{
+    width: 40px;
+    border-radius: 50%;
+}
+.header-section{
+    height: 70px;
+}
+.result-section{
+    height: calc( 100% - 70px);
+    position: relative;
+    top: 70px;
+}
+.btn-div{
+    padding-top: 15px;
+    background-color: #fff;
+}
+.user-profile{
+    height: 35px;
+    border-radius: 50%;
+}
+li.nav-item {
+    padding: 0 11px;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    margin: 0 5px;
+}
+
+li.nav-item:hover{
+    border-bottom: 2px solid #07506b;
+    cursor: pointer;
+}
+li.nav-item.profile{
+    border: 0px;
+}
+
+.size{
+    height: 65px;
+    width: 181px;
+}
+ .btn-arrow-right{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 18px;
+ }
+ 
+ .btn-arrow-right {
+    padding-left: 4px;
+ }
+ .btn-arrow-right:after{  
+    content: "";
+    position: absolute;
+    top: 28.3%;
+    
+    width: 32px;
+    
+    height: 32px;
+    
+    background: inherit;
+    
+    border: inherit;
+    
+    border-left-color: transparent;
+    
+    border-bottom-color: transparent;
+    
+    border-radius: 0px 4px 0px 0px;
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+ }
+  .btn-arrow-right:after {
+     transform: rotate(45deg);
+    
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+  }
+
+ .btn-arrow-right:after{
+    right: -11px;
+ }
+ 
+ .btn-arrow-right:after {
+    z-index: 1;
+ }
+ .required ,
+ .control-label:after {
+    content:"*";
+    color:red;
+  }
+ .mycard{
+     padding: 20px;
+ }
+
+ .menu-list > li{
+    padding: 15px 10px;
+    background: #cef2fd;
+    border-radius: 3px;
+    color: #004f71;
+    list-style: none;
+    margin-bottom: 10px;
+
+ }
+ .menu-list > li.active{
+    background: #049FD9;
+    color: #fff;
+}
+ .menu-list > li:hover{
+    background: #049FD9;
+    color: #fff;
+    border-bottom: 2px solid #07506b;
+    cursor: pointer;
+ }
+
+ .nav-header{
+    background-color: #049FD9! important;
+    color: #fff;
+ }
+.show {
+    background: rgba(151, 188, 223, 0.8117647058823529);
+    height: 89%;
+    position: absolute;
+    z-index: 9999;
+    top: 11%;
+}
+.hide{
+    display: none;
+    background: rgba(151, 188, 223, 0.8117647058823529);
+    height: 89%;
+    position: absolute;
+    z-index: 9999;
+    top: 11%; 
+}
+a.btn:hover {
+
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+a.btn {
+
+    float:right;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+.sku-card {
+    padding: 0;
+    position: absolute;
+    border: 0;
+    right: 0;
+}
+
+.card-effects {
+    background:#fff;
+    color: #047ca8;
+    border: 1px solid #fdfeff91;
+    border-radius: 0;
+    box-shadow: -6px 8px 13px #adb5bd;
+   
+}
+.skuDataList{
+    max-height: 408px;
+    overflow-y: auto;
+}
+.card-effects > .card-header{
+    background: #047ca8;
+    color: #fff;
+    padding-left: 10px;
+}
+.card-detail-effect{
+    border: 1px solid #fdfeff91;
+    border-radius: 0;
+    box-shadow: -6px 8px 13px #adb5bd;
+}
+.card-detail-effect > .card-header{
+    background: #047ca8;
+    color: #fff;
+}
+.bold-text {
+    color: #047ca8;
+}
+.pointerCursor{
+    cursor: pointer;
+}
+
+
+
+//  Css for the tabs structure *******************************
+.tab-close {
+    color: gray;
+    text-align: right;
+    cursor: pointer;
+  }
+
+.result-tabs{    background: #047ca8;}
+.result-tabs>li.active{
+  background: #049fd9;
+}
+.result-tabs > li {
+  background: #047ca8;
+  border-radius: 0px 14px 0 0;
+  margin-left: 1px;
+  color: #fff;
+}
+.result-tabs>li>a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+}
+.result-tabs>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+// End Css for tab structure
+
+//Css for Skulist structure *****************************
+.skuList>li {
+    padding: 9px;
+    padding-left: 1em;
+}
+.skuList > ul{
+    margin-bottom: 0;padding-inline-start:0px;
+}
+.skuList > ul > li {
+    background: #cae9f5;
+    padding: 10px;
+    margin-bottom: 2px;
+    padding-left: 1em;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+.skuList > ul > li > ul {
+    padding: 5px 2rem;position: relative;
+}
+.skuList > ul > li > ul > li,.skuList > ul > li > ul > li>ul>li{
+    padding: 5px 0px;position: relative;
+}
+
+.inActive{
+    display: none;
+}
+.invalidSKU{
+    border-right: 6px solid red;
+}
+.validSKU{
+    border-right: 6px solid #0ca10e;
+}
+// Css End for Skulist Structure ****************************
+//css for scroll up-down
+.skuList{
+    background-color: rgba(255, 255, 255, 0.8784313725);
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #cccccc;
+    height: 400px;
+    overflow-y: auto;
+    padding: 0px;
+    
+}
+.loading-spinner{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 999;
+}
+
+.validSKUStatus,.invalidSKUStatus {
+    width: 10px;
+    height: 10px;
+    background: #0ca10e;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    right: 11px;
+    top: 18px;
+    cursor: pointer;
+}
+.invalidSKUStatus{
+    background: #ff4d4d !important;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }

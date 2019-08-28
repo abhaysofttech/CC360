@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html,body{
+    height: 100%;
+    color: #8e8e8e !important;
+}
+body{
+    background-color: #ecf4f7 !important;
+    background-position: bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-image: url('../../CCW360/src/assets/images/global.png');
+}
+.row-centered {
+    text-align: center;
+}
+.col-centered {
+    display: inline-block;
+    float: none;
+    text-align: left;
+    margin-right: -4px;
+}
+
+.redBorder{
+    border: 2px solid red;
+}
+
+.no-margin{
+    margin:0px !important;
+}
+.no-padding{
+    padding: 0px !important;
+}
+.btn-info {
+    color: #fff;
+    background-color: #049FD9 !important;
+    border-color: #049FD9 !important;
+}
+
+.float-left{
+    float: left;
+}
+
+.p-e-10{
+    padding: 0 10px;   
+}
+
+
+

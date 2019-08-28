@@ -1,0 +1,98 @@
+<div class="col-12 no-padding">
+    <div class="col-12 no-padding">
+      <app-result-header></app-result-header>
+    </div>
+    <div class="row full-height no-margin  module-section">
+      <div class="col-4">
+        <div class="card module-cards">
+          <div class="card-header">
+            Buy method Validations
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <ul>
+                <li>User unable to add the buy method, no options are available in drop down for the Deal
+                  Id:18894006.</li>
+                <li>The partner country selected is 'Jersey' and currently there are no distributors setup in
+                  country Jersey , due to which buy method is showing up as blank. Also, since the partner
+                  selected is indirect and intended use is Resale, hence cisco is not coming up as the buy
+                  method.</li>
+                <li>User entered deal is a quick quote. In Quick quote, distributors in buy method are populated
+                  on the basis of price list selected in the deal.</li>
+                <li>(ii) User unable to find buy method option other than Cisco. In order to get ""INFLOW
+                  TECHNOLOGIES PVT LTD"" distributor,user needs to select "Nihon Price List in US Dollars" on
+                  the deal.</li>
+              </ul>
+          </div>
+        </div>
+        <div class="card module-cards">
+          <div class="card-header">
+            AutoDART Validations
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <ul>
+                <li>Discount discrepancy between DART and Deal. This occurs when the one of the SKUs is not
+                  published in the WPL (wholesale price list)Hence Dart not showing correct discount in the
+                  deal.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card module-cards">
+          <div class="card-header">
+            Order Status
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <ul>
+                <li>User trying to change the start date using the edit option in CCW getting an error message.
+                  Team have validated and found that SO#107703097 is a Meraki order hence no changes would be
+                  allowed on this order.</li>
+                <li>User trying to access Web OrderID# 84757251, Web OrderID# 84730821 trying through COT Tool.
+                  Both the Orders are Internal Iproc Order. As per system functionality Iproc Orders can not be
+                  accessed in Change Order Tool(COT). Enhance the module with this validation</li>
+                <li>Advise user to proceed with the Distributor for the sku CTS-MX800S-2CAM-K9.</li>
+                <li>User request to cancel line. Please cancel the SO# 108191554 from your end. We are not able
+                  to cancel the order from our end.</li>
+                <li>User unable to update discount on SO# 107413687 because the quote status is ordered. The
+                  discounts cannot be updated for the sku through COT</li>
+                <li>Requested the user to cancel the sku and order it again and then he can make required</li>
+                <li>Team have validated WO#84006811 and found that the order is of DISTI CBN flow hence line
+                  cancellation won't be allowed on the order via Change Order Tool as per the business policy
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card module-cards">
+          <div class="card-header">
+            Discounts related
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <ul>
+                <li>User not able to update discount as the given deal # 39083110 is currently under More
+                  information required(MIR) status and has not yet been submitted. During the MIR Status , the
+                  AM will not be able to edit the discounts and the same will be greyed out.</li>
+              </ul>
+          </div>
+        </div>
+        <div class="card module-cards">
+          <div class="card-header">
+            Order Discount validations
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <ul>
+                <li>check the web order# 83978068, why the discount only 32%. And user# yongatan cannot edit the
+                  discount</li>
+                <li>valid deal id and then place an order. Add this validation and recommended action</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

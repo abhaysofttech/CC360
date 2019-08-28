@@ -1,0 +1,77 @@
+{
+    "sku":[
+        {
+            "partNumber": "WS-C3850-12X48U-S",
+            "result":[
+                "It is not in the exclusion list of CCW.",
+                "It is not a $-Adjustable SKU which are considered Non Standard, so indirect partner and disti users can add it to quote.",
+                "It is not a AS-Transaction or AS-Subscription SKU which are considered Non Standard, so indirect partner and disti users can add it to quote",
+                "It is not a Software Subscription sku (XAAS) SKU, indirect partner and disti users can add it to quote.",
+                "It is Web orderable and can be added by partner and disti users.",
+                "The SKU can be ordered as MAJOR line.",
+                "The SKU 'WS-C3850-12X48U-S' may not be purchased outside of 'CATALYST-3850-CTD' Bundle SKUs. Please contact your account representative for more information.",
+                "The SKU 'WS-C3850-12X48U-S' is mapped to service level: 3C4P ,3SNT ,3SNTP ,C2P ,C4P ,C4S ,CMSN1 ,CMSR1 ,CMSS1 ,...",
+                "SKU 'WS-C3850-12X48U-S' is MSA (Multiple Service Attach ) enabled which means that user can add multiple compatible services to SKU."
+            ],
+            "errors":[],
+            "action":[
+                "If mandatory service attach flag is 'N', adding services is optional. If issue still persist, please contact the next level of support.",
+                "The Estimated Lead Time for a product may increase once it is fully configured."
+            ]
+
+        },
+        {
+            "partNumber": "SFP-10G-SR-S=",
+            "result":[
+                "It is not in the exclusion list of CCW.",
+                "It is not a $-Adjustable SKU which are considered Non Standard, so indirect partner and disti users can add it to quote.",
+                "It is not a AS-Transaction or AS-Subscription SKU which are considered Non Standard, so indirect partner and disti users can add it to quote.",
+                "It is not a Software Subscription sku (XAAS) SKU, indirect partner and disti users can add it to quote.",
+                "It is Web orderable and can be added by partner and disti users.",
+                "The SKU can be ordered as a SPARE. It cannot be added under any major line and should be ordered independently."
+            ],
+            "errors":[
+                "SKU 'SFP-10G-SR-S=' is non configurable.Hence user will not get the option to configure them.Select Options link will be disabled for SKU.",
+                "SKU 'SFP-10G-SR-S=' is non serviceable.Hence services can't be added."
+            ],
+            "action":[]
+
+        },
+        {
+            "partNumber": "L-MGMT3X-3K-K9=",
+            "result":[
+                "It is not in the exclusion list of CCW.",
+                "It is not a $-Adjustable SKU which are considered Non Standard, so indirect partner and disti users can add it to quote.",
+                "It is not a AS-Transaction or AS-Subscription SKU which are considered Non Standard, so indirect partner and disti users can add it to quote",
+                "It is not a Software Subscription sku (XAAS) SKU, indirect partner and disti users can add it to quote.",
+                "It is Web orderable and can be added by partner and disti users.",
+                "The SKU can be ordered as a SPARE. It cannot be added under any major line and should be ordered independently.",
+                "The SKU 'L-MGMT3X-3K-K9=' is mapped to service level: 3ECMU ,ECMU ,ECMUS ,PSBU ,PSUS ,SPCMU .",
+                "SKU 'L-MGMT3X-3K-K9=' is ALL or Nothing enabled which means that user need to attach or remove services under this to all serviceable lines."
+            ],
+            "errors":[
+                "SKU 'L-MGMT3X-3K-K9=' is non configurable.Hence user will not get the option to configure them.Select Options link will be disabled for SKU."
+            ],
+            "action":[
+                "If mandatory service attach flag is 'N', adding services is optional. If issue still persist, please contact the next level of support."
+            ]
+        },
+        {
+            "partNumber": "PWR-C1-715WAC=",
+            "result":[
+                "It is not in the exclusion list of CCW.",
+                "It is not a $-Adjustable SKU which are considered Non Standard, so indirect partner and disti users can add it to quote.",
+                "It is not a AS-Transaction or AS-Subscription SKU which are considered Non Standard, so indirect partner and disti users can add it to quote.",
+                "It is not a Software Subscription sku (XAAS) SKU, indirect partner and disti users can add it to quote.",
+                "It is Web orderable and can be added by partner and disti users.",
+                "The SKU can be ordered as a SPARE. It cannot be added under any major line and should be ordered independently."
+            ],
+            "errors":[
+                "SKU 'PWR-C1-715WAC=' is non serviceable.Hence services can't be added."
+            ],
+            "action":[
+                "The Estimated Lead Time for a product may increase once it is fully configured."
+            ]
+        }
+    ]
+}

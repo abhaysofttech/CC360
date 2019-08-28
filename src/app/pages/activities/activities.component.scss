@@ -1,0 +1,30 @@
+.center{
+    margin: 0px auto;
+}
+.activities{
+    background-color:rgba(255, 255, 255, 0.8784313725490196);
+    color: #8e8e8e;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #cccccc;
+}
+.activities > ul{
+    height: 150px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0px;
+    background: #fff;
+}
+.activities > ul>li{
+    padding: 6px 11px;
+    background: #e7eef5;
+    /* border-radius: 54px; */
+    font-size: 12px;
+    text-decoration: none;
+    margin: 3px;
+    border-left: 2px solid #2170b8;
+}
+.activities > ul>li>span{
+    margin-left: 5px;
+}
+

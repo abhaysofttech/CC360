@@ -1,0 +1,50 @@
+<div class="result-pane">
+    <button type="button" class="btn btn-warning btn-sm" style="float: right"
+        (click)="showOrHideAllData(hideme);hideme = !hideme">{{hideme? 'Hide':'Show'}}
+        All</button>
+    <ng-container *ngFor="let data of actionsArr.result;let i=index">
+        <ng-container *ngIf="data.status==='valid';else elseBlock">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a role="button" style="color: green">
+                            <i class="more-less glyphicon glyphicon-plus fa fa-check"></i>
+                            <span class="successTitle">
+                                {{data.action}}
+                            </span>
+                        </a>
+                    </h4>
+                </div>
+
+            </div>
+        </ng-container>
+        <ng-template #elseBlock>
+
+            <div class="panel-group">
+                <div class="panel panel-invalid">
+                    <div class="panel-heading">
+                        <h4 class="panel-title no-margin">
+                            <a class="pointerCursor" role="button" (click)="showRecommendedActions(i);">
+                                <i class="more-less glyphicon glyphicon-plus fa"
+                                    [ngClass]="{'fa-plus': actionsArr.result[i], 'fa-minus': actionsArr.result[i].active }"></i>
+
+                                <span class="errorTitle">
+                                    {{data.action}} test
+                                </span>
+                                <span class="rcAction">Recommended Action</span>
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="panel-body" *ngIf="actionsArr.result[i].active">
+                        {{data.recommSection}}
+                    </div>
+
+                </div>
+            </div>
+
+        </ng-template>
+
+
+    </ng-container>
+</div>

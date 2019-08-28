@@ -1,0 +1,28 @@
+<div class="card-body skuData">
+  <ng-container *ngFor="let data of skuData;">
+    <li class="partName">{{data.partNumber}}</li>
+
+    <ng-container *ngFor="let d of data.result">
+      <a role="button" style="color: green">
+        <i class="more-less glyphicon glyphicon-plus fa fa-check"></i>
+        <span class="skuResult">{{d}}</span><br>
+      </a>
+    </ng-container><br><br>
+    <ng-container *ngIf="data.errors.length > 0">
+      <ng-container *ngFor="let err of data.errors">
+        <a role="button" style="color:red">
+          <span class="more-less glyphicon glyphicon-remove form-control-feedback"></span>
+          <span>{{err}}</span>
+        </a>
+      </ng-container><br><br>
+    </ng-container>
+
+    <ng-container *ngIf="data.action.length > 0">
+      <strong>Recommended Actions:</strong>
+      <ng-container *ngFor="let act of data.action;let i=index;">
+        <span class="skuAction">{{act}}</span>
+      </ng-container><br><br>
+    </ng-container>
+
+  </ng-container><br><br>
+</div>

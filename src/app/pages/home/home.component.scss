@@ -1,0 +1,18 @@
+.logo{display: inline-block;}
+.logo > * > img{
+    width: 131px;
+}
+.profilePic{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.profilePic > img{
+    width: 40px;
+    border-radius: 50%;
+}
+.home-search {
+    margin-top: 5%;
+}
+

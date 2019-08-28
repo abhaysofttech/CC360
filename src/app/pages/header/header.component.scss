@@ -1,0 +1,45 @@
+// .dashBody{
+//     background-color: #6DB3F2;
+//     background-position: bottom, left top;
+//     background-repeat: no-repeat, repeat;
+//     background-image: url('../../../assets/images/global.png')
+// }
+header{
+    height: 60px;
+    padding: 0 20px;
+}
+.logo{display: inline-block;}
+.logo > * > img{
+    width: 131px;
+}
+.profilePic{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.profilePic > img{
+    width: 40px;
+    border-radius: 50%;
+}
+li.nav-item {
+    padding: 0 11px;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    margin: 0 5px;
+    color: #049ad2;
+}
+
+li.nav-item:hover{
+    border-bottom: 2px solid #07506b;
+    cursor: pointer;
+}
+li.nav-item.profile{
+    border: 0px;
+}
+.navbarSupportedContent{
+    position: absolute;
+    right: 50px;
+    top: 15px;
+}

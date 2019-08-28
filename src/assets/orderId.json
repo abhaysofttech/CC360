@@ -1,0 +1,42 @@
+{
+    "web_order_id" : [
+    "Order Search issue in Workspace", 
+    "Order validation", 
+    "Order Discount Validations",
+    "Contract Validations",
+    "SKU Orderability",
+    "Service Attach"
+    ],
+"deal_order_id": [
+    "SKU Orderability",
+    "Service Attach",
+    "Reusable Non Standard Deal Validations",
+    "Buy Method Validations",
+    "AutoDart Validations/CBN Confirmed Lines",
+    "Deal Validations",
+    "Discount Validations",
+    "Quote to Order Validations"
+    ],
+"estimate_id": [
+    "Estimates Share & Access",
+    "Estimates Validation",
+    "SKU Orderability",
+    "Service Attach"
+    ],
+"b2b_purchase_order": [
+    "Contract Validations",
+    "SKU Orderability"
+    ],
+"quote_id": [
+    "Deal Validations"
+    ],
+"sales_order_number": [
+    "Order Search issue in Workspace",
+    "Order validation",
+    "Contract Validations"
+    ],
+"dart_id": [
+    "Deal Validations",
+    "Discount Validations"
+    ]
+}

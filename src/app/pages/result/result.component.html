@@ -1,0 +1,90 @@
+<div *ngIf="isLoading" class="loading-spinner" style="text-align: center;">
+  <app-loading-spinner></app-loading-spinner>
+</div>
+
+<div class="row full-height no-margin">
+  <div class="col-12 no-padding">
+    <app-result-header></app-result-header>
+  </div>
+  <div class="col-12 no-padding result-section">
+    <div class="row full-height no-margin">
+      <div class="col-12 no-padding search-div">
+        <div class="row full-height no-margin">
+          <div class="col-12">
+            <app-local-search [category]="category" [orderNoData]="orderNoData" [caseNoData]="caseNoData">
+            </app-local-search>
+          </div>
+          <div class="col-12 overlay-card" #myLabel></div>
+
+          <!--Order Discount Validations-->
+
+          <div class="col-xl-10 offset-xl-1 no-paddingno-padding" style="margin-top: 30px;">
+            <div class="row full-height no-margin">
+              <div class="col-3 no-padding">
+                <div class="card no-margin card-effects">
+                  <div class="card-header">
+                    <span>SKU List</span>
+                  </div>
+
+                  <div class="card-body skuList">
+                    <ul *ngFor="let data of skuData.sku;let i=index">
+                      <ng-container>
+                        <li >
+                          <i class="more-less glyphicon glyphicon-plus fa"
+                            [ngClass]="{'fa-plus': skuData.sku[i], 'fa-minus': skuData.sku[i].active }"
+                            style="margin-right: 10px;" (click)="showMinorSKU(i)"></i>
+                          <span (click)="callSkuResult(i)">{{data.lineNumber}} - {{data.partNumber}}</span>
+                          <span [ngClass]="{'validSKUStatus': data.configStatus =='VALID','invalidSKUStatus': data.configStatus =='INVALID', 'blink': data.configStatus =='INVALID' && skuData.sku[i].active == false}"></span>
+
+
+
+                          <ng-container *ngIf="skuData.sku[i].active">
+                            <ul>
+                              <li *ngFor="let d of data.dataSet">
+                                {{d.lineNumber}} - {{d.partNumber}}
+                                <span [ngClass]="{'invalidSKUStatus': d.configStatus =='INVALID', 'blink': d.configStatus =='INVALID'}"></span>
+                                <ul>
+                                  <li *ngFor="let dd of d.dataSet"> {{dd.lineNumber}}{{dd.partNumber}}</li>
+                                </ul>
+                              </li>
+                            </ul>
+
+                          </ng-container>
+                        </li>
+                      </ng-container>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-9">
+                <div class="card">
+                  <ul class="nav result-tabs">
+
+                    <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a
+                        routerLink="/result">Search Result</a></li>
+                    <li role="presentation" routerLinkActive="active"><a routerLink="/result/result-attributes">Result
+                        Attributes</a>
+                    </li>
+
+                    <ng-container routerLinkActive routerLinkActive #skuResult="routerLinkActive">
+                      <li role="presentation" [ngClass]="skuResult.isActive ? 'active' : 'inActive'"><a
+                          routerLink="/result/sku-result">SKU
+                          Result</a>
+                      </li>
+                    </ng-container>
+
+                  </ul>
+                  <router-outlet></router-outlet>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

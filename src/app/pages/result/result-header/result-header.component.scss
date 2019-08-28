@@ -1,0 +1,44 @@
+header{
+    padding: 0 20px;
+    border-bottom: 4px solid #049ad2;
+    box-shadow: 0px 4px 7px #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-image: url(../../../../assets/images/header-back.png);
+    background-color: #d7eef6;
+}
+.logo{display: inline-block;}
+.logo > * > img{
+    width: 131px;
+}
+.profilePic{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.profilePic > img{
+    width: 40px;
+    border-radius: 50%;
+}
+li.nav-item {
+    padding: 0 11px;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    margin: 0 5px;
+    color: #049ad2;
+}
+
+li.nav-item:hover{
+    border-bottom: 2px solid #07506b;
+    cursor: pointer;
+}
+li.nav-item.profile{
+    border: 0px;
+}
+.user-profile{
+    height: 35px;
+    border-radius: 50%;
+}

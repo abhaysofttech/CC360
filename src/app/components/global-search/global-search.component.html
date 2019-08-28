@@ -1,0 +1,36 @@
+<section class="hero-home1">
+
+    <div class="container text-white z-index-10">
+        <div class="row">
+            <div class="col-xl-10 offset-xl-1" style="padding:40px 15px">
+                <div class="search-bar p-3 p-lg-1 pl-lg-4">
+                    <form #myForm="ngForm" (ngSubmit)="getSearchedData($event)">
+                        <div class="row">
+                            <div class="col-lg-3 d-flex align-items-center form-group no-divider">
+                                <select class="form-control" name="categories" [(ngModel)]="category"
+                                    (ngModelChange)="onSelectedChange($event)">
+                                    <option class="dropdown-item" *ngFor="let i of idList" [value]="i">{{i}}</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 d-flex align-items-center form-group has-error">
+                                <input type="text" name="orderNum" [(ngModel)]="orderNoData"
+                                    placeholder="Enter Order No*" class="form-control border-0 shadow-0 "
+                                    #orderNumControl="ngModel" required>
+                            </div>
+
+                            <div class="col-lg-3 d-flex align-items-center form-group">
+                                <input type="text" name="caseNum" [(ngModel)]="caseNoData" placeholder="Enter Case No*"
+                                    class="form-control border-0 shadow-0 " #caseNumControl="ngModel" required>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <button type="submit" class="btn btn-primary btn-block rounded-xl h-100"
+                                    [disabled]="myForm.form.invalid">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

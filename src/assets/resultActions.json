@@ -1,0 +1,34 @@
+{
+    "result": [
+        {
+            "action": "Web Order ID '83380355' has already been submitted. If the issue still persists, please reach out to the next level of support ",
+            "status": "valid",
+            "recommSection": ""
+        },
+        {
+            "action": "Web Order ID '83380355' is available in 'AUSTRALIA Price List in AUDs Ex-Tax' price list",
+            "status": "valid",
+            "recommSection": ""
+        },
+        {
+            "action": "Web Order ID '83380355' has been successfully submitted.",
+            "status": "valid",
+            "recommSection": ""
+        },
+        {
+            "action": "SKU 'A-SPK-NU-M1-X', 'A-SPK-NU-MC-X', 'A-SPK-TA-TNU-IT', 'A... added manually on order' , therefore will not get the approved deal discount.",
+            "status": "invalid",
+            "recommSection": "Order has RF (Refurbished) SKUs or SAAS lines in which case it would have to be cancelled via the COT (Change order Tool)."
+        },
+        {
+            "action": "Web Order ID '83380355' is not associated to any Quote. Therefore discount can not be checked with the Quote.",
+            "status": "invalid",
+            "recommSection": "Order has RF (Refurbished) SKUs or SAAS lines in which case it would have to be cancelled via the COT (Change order Tool)."
+        },
+        {
+            "action": "The Web Order Id '83380355' is a XaaS Order.",
+            "status": "invalid",
+            "recommSection": "XaaS orders cannot be modified/cancelled via CO(Change Order) Tool"
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+<section>
+
+  <div class="container text-white z-index-10">
+    <div class="row">
+      <div class="col-xl-10 offset-xl-1">
+        <div style="color: #047ca8;padding: 14px;">
+          You have searched for <strong>{{category}}</strong> ,
+          Order No : <strong>{{orderNoData}}</strong>,
+          Case No : <strong>{{caseNoData}}</strong>
+        </div>
+      </div>
+      <div class="col-xl-10 offset-xl-1">
+        <form>
+          <div class="search-bar" style="display: inline-flex;">
+            <div class="d-flex float-left p-e-10 align-items-center form-group no-divider">
+              <select class="form-control" name="categories" [(ngModel)]='selectedCategory'
+                (ngModelChange)='onOptionsSelected($event)'>
+                <option disabled selected hidden>{{selectedCategory}}</option>
+                <ng-container *ngIf="category == 'Web Order ID'">
+                  <ng-container *ngFor="let item of idArr">
+                    <option class="dropdown-item" [value]="id" *ngFor="let id of item.web_order_id">
+                      {{id}}
+                    </option>
+                  </ng-container>
+                </ng-container>
+                <ng-container *ngIf="category == 'Deal Order ID'">
+                  <ng-container *ngFor="let item of idArr">
+                    <option class="dropdown-item" [value]="id" *ngFor="let id of item.deal_order_id">
+                      {{id}}
+                    </option>
+                  </ng-container>
+                </ng-container>
+                <ng-container *ngIf="category == 'Estimate ID'">
+                  <ng-container *ngFor="let item of idArr">
+                    <option class="dropdown-item" [value]="id" *ngFor="let id of item.estimate_id">
+                      {{id}}</option>
+                  </ng-container>
+                </ng-container>
+                <ng-container *ngIf="category == 'B2B Purchase Order'">
+                  <ng-container *ngFor="let item of idArr">
+                    <option class="dropdown-item" [value]="id" *ngFor="let id of item.b2b_purchase_order">
+                      {{id}}</option>
+                  </ng-container>
+                </ng-container>
+                <ng-container *ngIf="category == 'Quote ID'">
+                  <ng-container *ngFor="let item of idArr">
+                    <option class="dropdown-item" [value]="id" *ngFor="let item of item.quote_id">
+                      {{id}}</option>
+                  </ng-container>
+                </ng-container>
+                <ng-container *ngIf="category == 'Sales Order Number'">
+                  <ng-container *ngFor="let item of idArr">
+                    <option class="dropdown-item" [value]="id" *ngFor="let id of item.sales_order_number">
+                      {{id}}</option>
+                  </ng-container>
+                </ng-container>
+                <ng-container *ngIf="category == 'Dart ID'">
+                  <ng-container *ngFor="let item of idArr">
+                    <option class="dropdown-item" [value]="id" *ngFor="let id of item.dart_id">
+                      {{id}}</option>
+                  </ng-container>
+                </ng-container>
+              </select>
+            </div>
+            <ng-container *ngIf="selectedCategory == 'Order Search issue in Workspace' ||
+                    selectedCategory == 'Estimates Share & Access' ||
+                    selectedCategory == 'Quote to Order Validations'">
+              <div class="d-flex float-left p-e-10 align-items-center form-group">
+                <input type="text" name="User CCO ID" placeholder="User CCO ID*" class="form-control shadow-0">
+              </div>
+            </ng-container>
+            <ng-container *ngIf="selectedCategory == 'Contract Validations'">
+              <div class="d-flex float-left p-e-10 align-items-center form-group">
+                <input type="text" name="Contract Number" placeholder="Contract Number" class="form-control shadow-0 ">
+              </div>
+            </ng-container>
+            <ng-container *ngIf="selectedCategory == 'Service Attach' || 
+                    selectedCategory =='Order validation' || 
+                    selectedCategory =='Order Discount Validations' || 
+                    selectedCategory == 'Contract Validations' || 
+                    selectedCategory == 'Reusable Non Standard Deal Validations' || 
+                    selectedCategory == 'Buy Method Validations' || 
+                    selectedCategory == 'AutoDart Validations/CBN Confirmed Lines' ||
+                    selectedCategory == 'Discount Validations' ||
+                    selectedCategory == 'Quote to Order Validations' ||
+                    selectedCategory == 'Estimates Validation'">
+              <div class=" d-flex float-left p-e-10 align-items-center form-group">
+                <input type="text" name="location" id="location" class="form-control" placeholder="PID Name">
+              </div>
+            </ng-container>
+            <ng-container *ngIf="selectedCategory == 'Service Attach'">
+              <div class=" d-flex float-left p-e-10 align-items-center form-group">
+                <input type="text" name="location" id="location" class="form-control" placeholder="Service Level">
+              </div>
+            </ng-container>
+            <ng-container *ngIf="selectedCategory == 'SKU Orderability'">
+              <div class=" d-flex float-left p-e-10 align-items-center form-group">
+                <input type="text" name="location" id="location" class="form-control" placeholder="Product/Service SKU">
+              </div>
+            </ng-container>
+            <ng-container *ngIf="selectedCategory == 'Buy Method Validations'">
+              <div class=" d-flex float-left p-e-10 align-items-center form-group">
+                <input type="text" name="location" id="location" class="form-control" placeholder="Distributor Name">
+              </div>
+            </ng-container>
+            <ng-container *ngIf="selectedCategory == 'Deal Validations'">
+              <div class=" d-flex float-left p-e-10 align-items-center form-group">
+                <input type="text" name="location" id="location" class="form-control" placeholder="User ID">
+              </div>
+            </ng-container>
+            <ng-container *ngIf="selectedCategory == 'Discount Validations'">
+              <div class=" d-flex float-left p-e-10 align-items-center form-group">
+                <input type="text" name="location" id="location" class="form-control"
+                  placeholder="Promotion Code / Incentive Code / Accelerator Code">
+              </div>
+            </ng-container>
+
+            <div class="float-left search-button">
+              <button type="submit" class="btn btn-primary btn-block rounded-xl h-100">Search </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>

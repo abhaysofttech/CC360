@@ -1,0 +1,47 @@
+<section class="hero-home1">
+
+  <div class="container z-index-10 top-pd-90">
+    <div class="row">
+      <div class="col-xl-10 offset-xl-1">
+        <div class="search-bar mt-5 p-3">
+          <div class="row">
+
+            <div class="col-lg-6 align-items-center">
+              <div class="activities">
+                <h6>Recent Search</h6>
+                <ul>
+                  <ng-container *ngFor="let i of storedData">
+                    <li>
+                      <span>Search for : - </span><span><a routerLink="/result">{{i.category}},</a></span>
+                      <span>{{i.orderNoData}},</span>
+                    <span>{{i.caseNoData}}</span>
+                    </li>
+                  </ng-container>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 align-items-center">
+              <div class="activities">
+                <h6>Recent Activities</h6>
+                <ul>
+                  <li>Lorem Ipsum has been the industry's standard</li>
+                  <li>Lorem Ipsum has been the industry's standard</li>
+                  <li>Lorem Ipsum has been the industry's standard</li>
+                  <li>Lorem Ipsum has been the industry's standard</li>
+                  <li>Lorem Ipsum has been the industry's standard</li>
+                  <li>Lorem Ipsum has been the industry's standard</li>
+                  <li>Lorem Ipsum has been the industry's standard</li>
+                  <li>Lorem Ipsum has been the industry's standard</li>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <form>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
